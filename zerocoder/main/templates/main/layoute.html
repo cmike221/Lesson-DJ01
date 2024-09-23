@@ -14,11 +14,13 @@
     <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
 </head>
 <body>
+<div class="container d-flex">
     {% include 'main/nav.html' %}
     <main class="mt-5">
         {% block content %}
         {% endblock %}
     </main>
+</div>
     {% include 'main/footer.html' %}
 </body>
 </html>

@@ -1,13 +1,15 @@
 /* main/css/styles.css */
+.container {
+    display: flex;
+}
+
 aside {
+    width: 250px;
     border-right: 1px solid #ddd;
     height: 100vh;
 }
 
-aside img {
-    max-width: 100%;
-}
-
 main {
-    padding-left: 20px;
+    flex-grow: 1;
+    padding: 20px;
 }
