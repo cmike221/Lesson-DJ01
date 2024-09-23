@@ -4,12 +4,20 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse("<h1>Это мой первый проект на Django</h1>")
+    # return HttpResponse("<h1>Это мой первый проект на Django</h1>")
+    datas = {
+        'caption': "MountDjango"
+    }
+    return render(request, 'main/index.html', datas)
 
 
-def data(request):
-    return HttpResponse("<h1>Это страница DATA</h1>")
+def page2(request):
+    return render(request, 'main/page2.html')
 
 
-def test(request):
-    return HttpResponse("<h1>Это страница TEST</h1>")
+def page3(request):
+    return render(request, 'main/page3.html')
+
+
+def page4(request):
+    return render(request, 'main/page4.html')

@@ -1,0 +1,13 @@
+/* main/css/styles.css */
+aside {
+    border-right: 1px solid #ddd;
+    height: 100vh;
+}
+
+aside img {
+    max-width: 100%;
+}
+
+main {
+    padding-left: 20px;
+}

@@ -1,0 +1,19 @@
+{% load static %}
+<aside class="d-flex flex-column align-items-center py-3">
+    <img src="{% static 'main/img/mount.jpg' %}" alt="TG bot" class="img-fluid rounded-circle mb-3" width="150">
+    <h2 class="text-center">MountDjango</h2>
+    <ul class="nav flex-column">
+        <li class="nav-item">
+            <a class="nav-link active" href="{% url 'home' %}">Главная</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'page2' %}">Вторая</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'page3' %}">Третья</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'page4' %}">Четвертая</a>
+        </li>
+    </ul>
+</aside>
